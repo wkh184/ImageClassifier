@@ -1,0 +1,4 @@
+python train.py flowers
+python train.py flowers --learning_rate 0.002 --epochs 20
+python predict.py "flowers/valid/1/image_06739.jpg" model.pth
+python predict.py "flowers/valid/88/image_00459.jpg" model.pth --category_names 'cat_to_name.json' --top_k 9
